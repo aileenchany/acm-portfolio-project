@@ -1,6 +1,7 @@
 
 /* BASE */
 html, body, .container {
+  background: #788785;
   height: 100vh;
   width: 100vw;
   margin: 0;
@@ -8,10 +9,11 @@ html, body, .container {
 }
 
 /* MAIN */
-/* Inspired by Duddley Storey Codepen - https://codepen.io/dudleystorey/pen/aONdzJ*/
+/* Inspired by Duddley Storey Codepen - https://codepen.io/dudleystorey/pen/aONdzJ */
 
 .main {
   text-align: center;
+  font-family:'Montserrat', sans-serif;
 }
 .half-dark, .half-light {
   height: 50%;
@@ -24,7 +26,7 @@ html, body, .container {
 .half-light {
   background: white;
 }
-div h1 {
+.heading-dark, .heading-light {
   color: transparent;
   margin: 0;
   padding: 0;
@@ -34,13 +36,13 @@ div h1 {
   align-self: center;
 }
 
-.half-dark h1 {
+.half-dark .heading-dark {
   background-image: url('https://andrewprokos.com/wp-content/uploads/TIMES-SQUARE-BRAZIL-BW-1000PX.jpg');
   background-size: 610px;
   background-clip: text;
   -webkit-background-clip:text;
 }
-.half-light h1 {
+.half-light .heading-light {
   background-image: url('https://mapio.net/images-p/105618165.jpg');
   background-size: 610px;
   background-clip: text;
@@ -81,4 +83,71 @@ align-items: center;
 }
 .main-footer a:hover {
   color: #5D7FC3;
+}
+
+/* HOMEPAGE */
+
+.homepage {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family:'Montserrat', sans-serif;
+  width: 100vw;
+}
+.hero {
+  width: 100%;
+  height: 800px;
+  background:white;
+  padding-top: 150px;
+}
+.hero h1 {
+  background-image: url('https://mapio.net/images-p/105618165.jpg');
+  background-size: 610px;
+  background-clip: text;
+  color: transparent;
+  font-family:'Montserrat', sans-serif;
+  font-size: 200px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  -webkit-background-clip:text;
+}
+.hero p { /* hint: Hi, I am */
+  font-size: 48px;
+  font-weight: 700;
+   margin: 0;
+}
+.hero h2 { /* hint: Front end dev... */
+  font-size: 36px;
+  font-weight: 600;
+   margin-bottom: 80px;
+}
+.primary-link, 
+.secondary-link {
+  border: 2px solid #76802A;
+  border-radius: 5px;
+  font-family:'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 20px;
+  padding: 15px 40px;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+.primary-link {
+  background: #76802A;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+  color:white; 
+}
+.primary-link:hover {
+  color:white;
+  background: #4d522a;
+  border: 2px solid #4d522a;
+}
+.secondary-link {
+  background: white; 
+  color:#76802A;  
+}
+.secondary-link:hover {
+  color:#242422;  
+  border: 2px solid #242422; 
 }
