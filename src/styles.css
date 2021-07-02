@@ -11,13 +11,21 @@
 
 /* BASE */
 
-html, body, .main {
-  background: var(--secondary-color);
+body {
   font-family:'Montserrat', sans-serif;
-  height: 100vh;
-  width: 100vw;
+  max-height: auto;
+  max-width: 100%;
   margin: 0;
   padding: 0;
+}
+
+h1, h2, h3, h4, p {
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  background: var(--secondary-color);
 }
 
 /* MAIN - COVER PAGE */
@@ -25,6 +33,10 @@ html, body, .main {
 
 .main {
   text-align: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 .half-dark, .half-light {
   height: 50%;
@@ -79,19 +91,19 @@ html, body, .main {
   background: var(--accent-color);
   box-shadow: var(--box-shadow);
 }
-.main-footer{
+.main-foot-note{
 color: var(--accent-color);
 justify-content: center;
 align-items: center;
 font-size: 14px;
 }
-.main-footer a {
+.main-foot-note a {
   text-decoration: none;
   color: var(--accent-color);
   font-weight: 600;
   font-size: 14px;
 }
-.main-footer a:hover {
+.main-foot-note a:hover {
   color: var(--accent-dark-color);
 }
 
@@ -107,7 +119,7 @@ font-size: 14px;
   width: 100%;
   height: 900px;
   background:var(--primary-light-color);
-  padding-top: 150px;
+  padding: 150px 0 0 0;
 }
 .hero h1 {
   background-image: url('https://mapio.net/images-p/105618165.jpg');
@@ -164,9 +176,10 @@ font-size: 14px;
 .contact {
   margin: 30px auto;
 }
-.contact, .footer {
+.contact, .foot-note {
   color: var(--primary-light-color);
   text-align: center;
+  padding: 0;
 }
 .contact h3 {
   font-weight: 600;
@@ -188,17 +201,17 @@ font-size: 14px;
 .social-media-links li a:hover {
   color: var(--accent-color);
 }
-.footer {
+.foot-note {
   font-size: 14px;
 }
-.footer a, 
+.foot-note a, 
 .contact a {
   color: var(--primary-light-color);
   font-weight: 600;
   transition: all 200ms ease-in-out;
   text-decoration: none;
 }
-.footer a:hover,
+.foot-note a:hover,
 .contact a:hover {
   color: var(--accent-color);
   text-decoration: none;
@@ -235,12 +248,12 @@ font-size: 14px;
 }
 .about-hero h1 {
   font-size: 50px;
-  font-weight: 600px;
+  font-weight: 600;
   margin-bottom: 30px;
 }
 .about h3 {
   font-size: 32px;
-  font-weight: 600px;
+  font-weight: 600;
   margin-bottom: 30px;
 }
 .about-hero p {
@@ -260,10 +273,15 @@ font-size: 14px;
 .about ul li {
   display: inline-block;
   font-size: 16px;
+  font-weight: 600;
   list-style-type: none;
   padding: 0 15px;
   border-right: 2px solid var(--primary-dark-color);
   text-align: center;
+  transition: all 200ms ease-in;
+}
+.about ul li:hover {
+  color: var(--accent-color);
 }
 .tech-stack, .design-skills, .certifications {
   margin: 75px 0;
@@ -282,4 +300,24 @@ font-size: 14px;
   border: 1px solid var(--primary-dark-color);
   border-radius: 25%;
   padding: 0 20px;
+}
+
+/* WORK */
+
+.work {
+  background: var(--primary-light-color);
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.work .col-4 {
+  background: lightgray;
+  width: 400px;
+  height: 300px;
+}
+.work .project {
+  margin: 20px;
+}
+.project .col-8 {
+  text-align: end;
 }
