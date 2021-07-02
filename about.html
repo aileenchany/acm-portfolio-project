@@ -13,24 +13,26 @@
   <script src="https://kit.fontawesome.com/5b97558d7e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="about-wrapper">
-    <div class="about">
-      <div class="row about-hero">
-        <div class="col-4 d-flex justify-content-center">
-          <div class="my-photo"></div>
-          <a href="#contact">Contact me</a>
+  <div class="about" id="top">
+    <div class="row about-hero">
+      <div class="col-3">
+        <div class="my-photo"></div>
+        <div class="text-center">
+          <a href="/about.html#contact" class="contact-me">Contact me</a>
         </div>
-        <div class="col-6">
-          <h1>Hi, my name is Aileen Chan Miranda.</h1>
-          <p>I'm a Frontend Developer based in NYC. Originally from Puerto Rico. Moved to NY in 2006 to study Fashion Design and since, I've had the privilege to work with brands like JCPenney, Liz Claiborne & Talbots.</p>
-          <p>My interest in fashion and technology has led me to pursue learning frontend development by gaining skills in HTML, CSS, JavaScript,  React & Responsive Web Design. I'm driven by curiosity in technology and how user-centered applications help businesses thrive and impact the world in a positive way!</p>
-          <a href="" >See my projects <i class="fas fa-arrow-right"></i></a>
-          <a href=" ">My qualifications <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="col-7">
+        <h1>Hi, my name is Aileen Chan Miranda.</h1>
+        <p>I'm a Frontend Developer based in NYC. Originally from Puerto Rico, I moved to NY in 2006 to study Fashion Design and since, I've had the privilege to work with brands like JCPenney, Liz Claiborne & Talbots.</p>
+        <p>My interest in fashion and technology has led me to pursue learning frontend development by gaining skills in HTML, CSS, JavaScript,  React & Responsive Web Design. I'm driven by curiosity in technology and how user-centered applications help businesses thrive and impact the world in a positive way!</p>
+        <div class="links">
+          <a href="/work.html" class="primary-link">See my work <i class="fas fa-arrow-right"></i></a>
+          <a href="/about.html#qualifications" class="secondary-link">My qualifications <i class="fas fa-arrow-right"></i></a>
         </div>
-      </div> <!-- About-hero content ends -->
-    </div> <!-- About wrapper ends -->
+      </div>
+     </div> <!-- About-hero content ends -->
     <hr />
-    <div class="skills">
+    <div class="skills" id="qualifications">
       <div class="row tech-stack">
         <h3>Tech Stack:</h3>
         <ul>
@@ -39,7 +41,6 @@
           <li>Bootstrap</li>
           <li>HTML5</li>
           <li>CSS3</li>
-          <li>Responsive Web Design</li>
           <li>Git & GitHub</li>
           <li>Netlify</li>
           <li>VS Code</li>
@@ -53,65 +54,63 @@
           <li>Adobe Photoshop</li>
           <li>Adobe Illustrator</li>
           <li>Low Fidelity Wireframe</li>
+           <li>Responsive Web Design</li>
         </ul>
       </div> <!-- Design Skills content ends -->
       <hr />
       <div class="row certifications">
         <h3>Certifications:</h3>
-        <div class="col">
-          React Development
-          <img src="" alt="" />
+        <div class="col certificate">
+          <img src="https://s3.amazonaws.com/shecodesio-production/students/certificates/000/031/324/original/result.png?1622574640" alt="" />
         </div>
-        <div class="col">
-          Front End Development
-          <img src="" alt="" />
+        <div class="col certificate">
+          <img src="https://s3.amazonaws.com/shecodesio-production/students/certificates/000/024/145/original/result.png?1618178743" alt="" />
         </div>
-        <div class="col">
-          Responsive Web Development - Coming Soon
-          <img src="" alt="" />
+        <div class="col certificate">
+          <img src="https://s3.amazonaws.com/shecodesio-production/students/certificates/000/022/177/original/result.png?1610737752" alt="" />
         </div>
-        <div class="col">
-          Introduction to Coding
-          <img src="" alt="" />
+        <div class="col certificate coming-soon">
+          <img src="images/coming-soon.png" alt="" />
         </div>
       </div> <!-- Certifications content ends -->
     </div>
   </div>
   <div class="row">
-      <div class="contact" id="contact">
-        <h3>Contact me!</h3>
-        <a href="mailto:aileenchany@gmail.com">aileenchany@gmail.com</a>
-        <h3>Let's connect!</h3>
-        <p>Follow me on social media.</p>
-        <ul class="social-media-links">
-          <li>
-            <a href="https://www.instagram.com/porto_caribe/" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/aileenchany" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/aileen-chanmiranda/" target="_blank">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </li>
-        </ul>
-      </div> <!-- Contact "me" content ends -->
-    </div> <!-- Contact "me" wrapper ends -->
-    <div class="footer">
-      <a href="" target="_blank">ACM</a> 
-      2021 | 
-      <a href="" target="_blank">GitHub</a> 
-      Open-Sourced | Hosted on 
-      <a href="" target="_blank">Netlify</a>
-    </div> 
-    
+    <div class="contact" id="contact">
+      <h3>Contact me!</h3>
+      <a href="mailto:aileenchany@gmail.com">aileenchany@gmail.com</a>
+      <h3>Let's connect!</h3>
+      <p>Follow me on social media.</p>
+      <ul class="social-media-links">
+        <li>
+          <a href="https://www.instagram.com/porto_caribe/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/aileenchany" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/aileen-chanmiranda/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+      </ul>
+    </div> <!-- Contact "me" content ends -->
+  </div> <!-- Contact "me" wrapper ends -->
+  <div class="footer">
+    <a href="" target="_blank">ACM</a> 
+    2021 | 
+    <a href="" target="_blank">GitHub</a> 
+    Open-Sourced | Hosted on 
+    <a href="" target="_blank">Netlify</a>
+  </div>
   <div>
     <a href="/homepage.html">Back to Homepage</a>
+    <br/>
+    <a href="/about.html#top">Back to top</a>
   </div>
 </body>
 </html>
