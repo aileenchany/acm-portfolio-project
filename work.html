@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="ACM's - Aileen Chan Miranda - Front End Developer Portfolio">
-  <title>ACM - Front End Developer Portfolio | About Me Page</title>
+  <title>ACM - Front End Developer Portfolio | My Work Page</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -13,58 +13,68 @@
   <script src="https://kit.fontawesome.com/5b97558d7e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container work" id="top">
-    <div class="row">
-      <h1>Frontend Projects</h1>
+  <div class="container-fluid text-end" id="top">
+    <div class="work">
+      <div class="row mt-5 mb-4 justify-content-center">
+        <h1 class="text-center fw-bold pb-4">Frontend Projects</h1>
+      </div>
+      <div class="row mt-3 mb-3 justify-content-center"> <!-- React Weather App Project Content -->
+        <div class="col-md-6 m-3 rounded project project-1">
+          <!-- Project image -->
+        </div>
+        <div class="col-md-6 m-3 rounded bg-color">
+          <h3 class="p-3">React Weather App</h3>
+          <p class="pe-3 ps-5">
+            A 5-day weather forecast application built with React JSX, HTML and CSS. The user can search for any city and the search triggers 
+            an Ajax call to the Open Weather API which returns formatted data in the form of a JSON file. The app then collects the weather data, stores it internally and 
+            displays it through the UI components. By applying the React Hook, useState, the user is able to switch between °F & °C temperatures. Lastly, 
+            by using Geolocation, we allow the user to see the weather conditions in their current location. 
+          </p>
+          <div class="links mt-5">
+            <a href="" class="primary-link ms-0">Launch this app</a>
+            <a href="" class="secondary-link">See my code</a>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3 mb-3 justify-content-center"> <!-- React Dictionary Project Content -->
+        <div class="col-md-6 m-3 rounded project project-2">
+          <!-- Project image -->
+        </div>
+        <div class="col-md-6 m-3 rounded bg-color">
+          <h3 class="p-3">React Dictionary</h3>
+          <p class="pe-3 ps-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h4 class="p-3">Built with:</h4>
+        </div>
+      </div>
+      <div class="row mt-3 mb-3 justify-content-center"> <!-- Porto Caribe Project Content -->
+        <div class="col-md-6 m-3 rounded project project-3">
+          <!-- Project image -->
+        </div>
+        <div class="col-md-6 m-3 rounded bg-color">
+          <h3 class="p-3">Porto Caribe</h3>
+          <p class="pe-3 ps-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h4 class="p-3">Built with:</h4>
+        </div>
+      </div>
     </div>
-    <div class="row project"> <!-- React Weather App Project Content -->
-      <div class="col-4">
-        <!-- Project image -->
-      </div>
-      <div class="col-8">
-        <h3>Project Title</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <h4>Built with:</h4>
-      </div>
-    </div>
-    <div class="row project"> <!-- React Dictionary Project Content -->
-      <div class="col-4">
-        <!-- Project image -->
-      </div>
-      <div class="col-8">
-        <h3>Project Title</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <h4>Built with:</h4>
-      </div>
-    </div>
-    <div class="row project"> <!-- Porto Caribe Project Content -->
-      <div class="col-4">
-        <!-- Project image -->
-      </div>
-      <div class="col-8">
-        <h3>Project Title</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <h4>Built with:</h4>
-      </div>
-    </div>
-    <div class="row footer">
-      <div class="contact" id="contact">
-        <h3>Contact me!</h3>
+    <div class="row footer text-center justify-content-center align-items-center">
+      <div class="col-md-12 mt-5 mb-4 contact" id="contact">
+        <h3 class="mb-2">Contact me!</h3>
         <a href="mailto:aileenchany@gmail.com">aileenchany@gmail.com</a>
-        <h3>Let's connect!</h3>
+        <h3 class="mt-5 mb-2">Let's connect!</h3>
         <p>Follow me on social media.</p>
-        <ul class="social-media-links">
-          <li>
+        <ul class="social-media-links mt-4 mb-0 p-0">
+          <li class="d-inline-block ps-0 pe-4">
             <a href="https://www.instagram.com/porto_caribe/" target="_blank">
               <i class="fab fa-instagram"></i>
             </a>
           </li>
-          <li>
+          <li class="d-inline-block ps-4 pe-4">
             <a href="https://github.com/aileenchany" target="_blank">
               <i class="fab fa-github"></i>
             </a>
           </li>
-          <li>
+          <li class="d-inline-block ps-4 pe-0">
             <a href="https://www.linkedin.com/in/aileen-chanmiranda/" target="_blank">
               <i class="fab fa-linkedin-in"></i>
             </a>
@@ -72,14 +82,17 @@
         </ul>
       </div> <!-- Contact "me" content ends -->
       <div class="foot-note">
-        <a href="" target="_blank">ACM</a> 
+        <a href="https://www.linkedin.com/in/aileen-chanmiranda/" target="_blank" class="fw-bold">ACM</a> 
         2021 | 
-        <a href="" target="_blank">GitHub</a> 
+        <a href="https://github.com/aileenchany/acm-portfolio-project" target="_blank" class="fw-bold">GitHub</a> 
         Open-Sourced | Hosted on 
-        <a href="" target="_blank">Netlify</a>
+        <a href="https://affectionate-benz-03cce0.netlify.app/" target="_blank" class="fw-bold">Netlify</a>
         <br/>
         <br/>
-        <a href="/">Back to Main</a>
+        <a href="/homepage.html" class="fw-bold">Back to Homepage</a>
+        <br/>
+        <br/>
+        <a href="#top" class="fw-bold">Back to Top</a>
         <br/>
         <br/>
       </div> <!-- Foot-note content ends -->

@@ -229,19 +229,36 @@ body {
 /* WORK */
 
 .work {
-  background: var(--primary-light-color);
-  width: 100%;
-  padding: 0;
-  margin: 0;
+  padding-top: 100px;
+  margin-bottom: 100px;
 }
-.work .col-4 {
-  background: lightgray;
-  width: 400px;
-  height: 300px;
+.work h3,
+.work h4 {
+  font-weight: 600;
+}
+.work .bg-color {
+  background: var(--primary-light-color);
+  border: 12px solid var(--primary-light-color);
+  box-shadow: var(--box-shadow);
+  color: var(--primary-dark-color);
 }
 .work .project {
-  margin: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  width: 450px;
+  height: 350px;
+  border: 12px solid var(--primary-light-color);
+  box-shadow: var(--box-shadow);
 }
-.project .col-8 {
-  text-align: end;
+.work .project-1 {
+  background-image: url('../images/react-weather-app-img.png');
+}
+.work .project-2 {
+  background-image: url('../images/react-dictionary-puppy-img.png');
+  transition: all 300ms ease-in-out;
+}
+.work .project-3 {
+  background-image: url('../images/porto-caribe-img.png');
 }
