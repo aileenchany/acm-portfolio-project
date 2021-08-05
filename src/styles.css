@@ -3,7 +3,6 @@
 :root {
   --primary-light-color: #fff;
   --primary-dark-color: #000;
-  --secondary-color: #B1AD9E; /* SAND */
   --secondary-dark-color: #202020;
   --accent-color: #76802A; /* BRIGHT OLIVE */
   --accent-dark-color: #4d522a; /* DARK OLIVE */
@@ -104,10 +103,6 @@ nav li.active a {
  color: var(--accent-color);
  font-weight: 600;
 }
-nav p {
-  padding: 0;
-  margin:0;
-}
 nav li {
   display: inline;
   font-size: 16px;
@@ -117,13 +112,14 @@ nav li {
 }
 nav ul {
   padding: 0;
-  
 }
 nav .logo {
   color: var(--primary-light-color);
   font-size: 28px;
   font-weight: 700;
   letter-spacing: 0.25em;
+  padding: 0;
+  margin:0;
 }
 /* HERO */
 .hero {
@@ -176,14 +172,13 @@ nav .logo {
   color: var(--primary-light-color); 
 }
 .secondary-link {
-  border: 2px solid var(--primary-light-color);
-  background: var(--primary-light-color);
-  color: var(--accent-dark-color);  
+  border: 2px solid var(--accent-color);
+  background: transparent; 
+  color: var(--accent-color);  
 }
 .secondary-link:hover {
-  color: var(--accent-color);
-  background: transparent;  
-  border: 2px solid var(--accent-color); 
+  color: var(--primary-light-color); 
+  border: 2px solid var(--primary-light-color); 
 }
 
 /* CHARCOAL WAVES - SHAPE DIVIDER - HOME PAGE - https://www.shapedivider.app/ */
@@ -328,46 +323,47 @@ a.top:hover {
 
 .work {
   background: var(--secondary-dark-color);
-  padding-top: 100px;
   margin-bottom: 100px;
 }
 .work h1 {
-  color: var(--primary-light-color);
-  font-size: 30px;
+  color: var(--accent-color);
+  font-size: 36px;
   font-weight: 400;
   opacity: 0.8;
+  padding: 50px;
+  word-spacing: 0.15em;
 }
-.work h3, .work h4, .work p {
+.work h2 {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+.work h3, .work p {
   color: var(--primary-light-color);
   opacity: 0.8;
 }
-.work h3,
-.work h4 {
-  font-weight: 600;
+.work h3 {
+  font-weight: 400;
+  font-size: 18px;
 }
 .work .bg-color {
-  background: var(--primary-dark-color);
-  border: 12px solid var(--primary-dark-color);
+  background: #333;
   box-shadow: var(--box-shadow);
   color: var(--primary-dark-color);
 }
 .work .project {
+  background-color: var(--primary-light-color);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: 50%;
-  background-position-y: 50%;
-  width: 450px;
-  height: 350px;
-  border: 12px solid var(--primary-dark-color);
   box-shadow: var(--box-shadow);
+  background-position:center;
+  background-size: 100%;
 }
 .work .project-1 {
-  background-image: url('../images/react-weather-app-img.png');
+  background-image: url('../images/react-weather-app-img.png'); 
 }
 .work .project-2 {
-  background-image: url('../images/react-dictionary-puppy-img.png');
-  transition: all 300ms ease-in-out;
+  background-image: url('../images/react-dictionary-puppy-img.png');  
 }
 .work .project-3 {
-  background-image: url('../images/porto-caribe-img.png');
+  background-image: url('../images/porto-caribe-img.png'); 
 }
