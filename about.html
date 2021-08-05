@@ -13,11 +13,30 @@
   <script src="https://kit.fontawesome.com/5b97558d7e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container-fluid" id="top">
+  <div class="container">
+    <nav class="d-flex justify-content-between"  id="top">
+      <p class="logo">ACM</p>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li class="active">
+          <a href="/about.html">About</a>
+        </li>
+        <li>
+          <a href="/about.html#qualifications">Skills</a>
+        </li>
+        <li>
+          <a href="/work.html">Work</a>
+        </li>
+        <li>
+          <a href="/contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container-fluid">
     <div class="row about-hero justify-content-center align-items-center">
-      <div class="col-md-12 text-center">
-        <h1 class="mb-5 p-0">About Me</h1>
-      </div>
       <div class="col-md-4">
         <div class="my-photo m-auto rounded-circle"></div>
         <div class="text-center m-3">
@@ -25,9 +44,10 @@
         </div>
       </div>
       <div class="col-md-8 text-start">
-        <h2 class="mb-4">Hi, my name is Aileen Chan Miranda.</h2>
-        <p class="mb-4 pe-5">I'm a Frontend Developer based in NYC. Originally from Puerto Rico, I moved to NY in 2006 to study Fashion Design and since, I've had the privilege to work with brands like JCPenney, Liz Claiborne & Talbots.</p>
-        <p class="mb-4 pe-5">My interest in fashion and technology has led me to pursue learning frontend development by gaining skills in HTML, CSS, JavaScript,  React & Responsive Web Design. I'm driven by curiosity in technology and how user-centered applications help businesses thrive and impact the world in a positive way!</p>
+        <h2 class="mb-5 p-0">About Me</h2>
+        <h1 class="mb-4">Hi, my name is Aileen Chan Miranda.</h1>
+        <p class="mb-4 pe-5">I'm a Frontend Developer based in NYC. Originally from Puerto Rico, I moved to NY in 2006 to study Fashion Design at FIT and since, I've had the privilege to work with companies like JCPenney, Liz Claiborne & Talbots.</p>
+        <p class="mb-4 pe-5">My interest in fashion and technology has led me to pursue learning Front End Development by gaining skills in HTML, CSS, JavaScript,  React & Responsive Web Design. I'm driven by curiosity in technology and how user-centered applications help businesses thrive and impact the world in a positive way!</p>
         <div class="links mt-5">
           <a href="/work.html" class="primary-link ms-0">See my work <i class="fas fa-arrow-right"></i></a>
           <a href="/about.html#qualifications" class="secondary-link">My qualifications <i class="fas fa-arrow-right"></i></a>
@@ -35,7 +55,6 @@
       </div>
     </div> <!-- About-hero content ends -->
     <div class="skills" id="qualifications">
-      <hr />
       <div class="row m-5 tech-stack">
         <h3 class="mb-4 mt-3">Tech Stack:</h3>
         <ul>
@@ -77,6 +96,15 @@
         </div>
       </div> <!-- Certifications content ends -->
     </div> <!-- Qualifications content ends -->
+    <div class="shape-divider">  <!-- Waves shape divider - See CSS for info -->
+      <div class="custom-shape-divider-top-1628184011">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+      </div>
+    </div>
     <div class="row footer text-center justify-content-center align-items-center">
       <div class="col-md-12 mt-5 mb-4 contact" id="contact">
         <h3 class="mb-2">Contact me!</h3>
@@ -109,10 +137,7 @@
         <a href="https://affectionate-benz-03cce0.netlify.app/" target="_blank" class="fw-bold">Netlify</a>
         <br/>
         <br/>
-        <a href="/homepage.html" class="fw-bold">Back to Homepage</a>
-        <br/>
-        <br/>
-        <a href="#top" class="fw-bold">Back to Top</a>
+        <a href="#top" class="top fw-bold">Back to Top</a>
         <br/>
         <br/>
       </div> <!-- Foot-note content ends -->
