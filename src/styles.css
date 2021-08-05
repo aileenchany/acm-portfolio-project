@@ -1,4 +1,5 @@
-/* CSS VARIABLES */
+/* CSS */
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@300&display=swap');
 
 :root {
   --primary-light-color: #fff;
@@ -117,7 +118,7 @@ nav .logo {
   color: var(--primary-light-color);
   font-size: 28px;
   font-weight: 700;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.15em;
   padding: 0;
   margin:0;
 }
@@ -135,13 +136,15 @@ nav .logo {
   background-size: 610px;
   background-clip: text;
   color: transparent;
+ 
   font-size: 200px;
   font-weight: 700;
   margin-bottom: 12px;
   -webkit-background-clip:text;
 }
 .hero p { /* hint: Hi, I am */
-  font-size: 48px;
+  font-family: 'Tourney', cursive;
+  font-size: 36px;
   font-weight: 500;
   opacity: 0.8;
 }
@@ -278,7 +281,8 @@ a.top:hover {
   color: var(--accent-color);
 }
 .about-hero h2 {
-  font-size: 30px;
+  font-family: 'Tourney', cursive;
+  font-size: 36px;
   font-weight: 400;
   opacity: 0.8;
 }
@@ -294,18 +298,22 @@ a.top:hover {
   color: var(--primary-light-color);
 }
 .skills h3 {
-  color: var(--accent-color);
+  font-family: 'Tourney', cursive;
+  color: var(--primary-light-color);
   font-size: 32px;
   font-weight: 600;
+  letter-spacing: 0.10em;
+  opacity: 0.8;
 }
 .skills ul li {
+  color: var(--accent-color);
   font-size: 16px;
   font-weight: 600;
   transition: all 200ms ease-in;
   opacity: 0.8;
 }
 .skills ul li:hover {
-  color: var(--accent-color);
+  color: var(--primary-light-color);
   opacity: 1;
 }
 .certificate img {
@@ -326,7 +334,8 @@ a.top:hover {
   margin-bottom: 100px;
 }
 .work h1 {
-  color: var(--accent-color);
+  font-family: 'Tourney', cursive;
+  color: var(--primary-light-color);
   font-size: 36px;
   font-weight: 400;
   opacity: 0.8;
@@ -336,6 +345,7 @@ a.top:hover {
 .work h2 {
   color: var(--accent-color);
   font-weight: 600;
+  font-family: 'Tourney', cursive;
 }
 .work h3, .work p {
   color: var(--primary-light-color);
