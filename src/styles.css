@@ -324,7 +324,7 @@ a.top:hover {
 
 /* CONTACT */
 .contact-container .footer{
-  height: 750px;
+  height: 100vh;
 }
 .contact-container .footer h1 {
   font-family: 'Tourney', cursive;
