@@ -21,71 +21,6 @@ body {
   padding: 0;
 }
 
-/* OLD MAIN - COVER PAGE */
-/* Inspired by Duddley Storey Codepen - https://codepen.io/dudleystorey/pen/aONdzJ */
-/*
-.main {
-  text-align: center;
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-}
-.half-dark, .half-light {
-  height: 50%;
-  width: 100vw;
-  overflow: hidden;
-}
-.half-dark {
-  background: var(--primary-dark-color);
-}
-.half-light {
-  background: var(--primary-light-color);
-}
-.heading-dark, .heading-light {
-  color: transparent;
-  margin: 0;
-  padding: 0;
-  font-size: 200px;
-  font-weight: 700;
-  align-self: center;
-}
-
-.half-dark .heading-dark {
-  background-image: url('https://andrewprokos.com/wp-content/uploads/TIMES-SQUARE-BRAZIL-BW-1000PX.jpg');
-  background-size: 610px;
-  background-clip: text;
-  -webkit-background-clip:text;
-}
-.half-light .heading-light {
-  background-image: url('https://mapio.net/images-p/105618165.jpg');
-  background-size: 610px;
-  background-clip: text;
-  -webkit-background-clip:text;
-}
-.enter {
-  position: absolute;
-  top: 49%;
-  left: 44%;
-}
-.enter a {
-  background: rgba(255, 255, 255, 0.7);
-  border: 2px solid var(--accent-color);
-  border-radius: 5px;
-  color: var(--accent-color);
-  font-weight: 600;
-  font-size: 16px;
-  padding: 15px 50px;
-  text-decoration: none;
-  transition: all 200ms ease-in-out;
-}
-.enter a:hover {
-  color: var(--primary-light-color);
-  background: var(--accent-color);
-  box-shadow: var(--box-shadow);
-}
-*/
-
 /* HOMEPAGE */
 /* NAV BAR */
 nav {
@@ -122,7 +57,13 @@ nav .logo {
   padding: 0;
   margin:0;
 }
+
 /* HERO */
+/* Inspired by Duddley Storey Codepen - https://codepen.io/dudleystorey/pen/aONdzJ */
+/* Optional backgrounds
+  background-image: url('https://andrewprokos.com/wp-content/uploads/TIMES-SQUARE-BRAZIL-BW-1000PX.jpg');
+  background-image: url('https://mapio.net/images-p/105618165.jpg');
+*/
 .hero {
   color: var(--primary-light-color);
   height: 850px;
@@ -330,7 +271,6 @@ a.top:hover {
 /* WORK */
 
 .work {
-  background: var(--secondary-dark-color);
   margin-bottom: 100px;
 }
 .work h1 {
@@ -367,6 +307,10 @@ a.top:hover {
   box-shadow: var(--box-shadow);
   background-position:center;
   background-size: 100%;
+  height: 400px;
+}
+.work .project-content {
+  height: 400px;
 }
 .work .project-1 {
   background-image: url('../images/react-weather-app-img.png'); 
@@ -376,4 +320,34 @@ a.top:hover {
 }
 .work .project-3 {
   background-image: url('../images/porto-caribe-img.png'); 
+}
+
+/* CONTACT */
+.contact-container .footer{
+  height: 750px;
+}
+.contact-container .footer h1 {
+  font-family: 'Tourney', cursive;
+}
+/* optional leaves css
+.contact-container .palm-leaves-1,
+.contact-container .palm-leaves-2 {
+  position: absolute;
+  height: 75%;
+  opacity: 0.7;
+}
+.contact-container .palm-leaves-1 {
+  left: 0;
+}
+.contact-container .palm-leaves-2 {
+  right: 0;
+}
+*/
+.contact-container .footer a {
+  color: var(--primary-dark-color);
+  text-decoration: none;
+}
+.contact-container .footer a:hover {
+  color: var(--accent-color);
+  text-decoration: none;
 }
