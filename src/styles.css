@@ -15,8 +15,7 @@
 body {
   background: var(--secondary-dark-color);
   font-family:'Montserrat', sans-serif;
-  max-height: auto;
-  max-width: 100%;
+
   margin: 0;
   padding: 0;
 }
@@ -162,7 +161,8 @@ nav .logo a:hover {
   background-image: url('/images/sand.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 50px;
+  padding: 50px 0 0 0;
+  width: 100vw;
 }
 .contact h3 {
   color: var(--primary-dark-color);
@@ -236,6 +236,7 @@ a.top:hover {
   font-size: 20px;
   line-height: 2em;
   opacity: 0.8;
+  padding-right: 40px;
 }
 
 /* SKILLS SECTION */
@@ -312,10 +313,6 @@ a.top:hover {
   box-shadow: var(--box-shadow);
   background-position:center;
   background-size: 100%;
-  height: 400px;
-}
-.work .project-content {
-  height: 400px;
 }
 .work .project-1 {
   background-image: url('../images/react-weather-app-img.png'); 
@@ -357,6 +354,16 @@ a.top:hover {
   text-decoration: none;
 }
 
+/* TABLET - MEDIA QUERIES */
+@media only screen and (max-width: 992px) {
+  /* DESKTOP - ABOUT PAGE */
+  .about-hero .hidden {
+    display: none;
+  }
+  .about-hero p {
+    padding-right: 0;
+  }
+}
 /* MOBILE - MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
   /* MOBILE - HOMEPAGE */
@@ -369,6 +376,9 @@ a.top:hover {
   nav li {
     margin: 0px 5px;
     font-size: 16px;
+  }
+  nav ul li.hidden {
+    display: none;
   }
   .hero {
     height: 650px;
@@ -400,9 +410,7 @@ a.top:hover {
     font-size: 11px;
   }
   /* MOBILE - ABOUT PAGE */
-  .about-hero {
-    padding-top: 15px;
-  }
+  
   .about-hero h1,
   .about-hero h2,
   .about-hero p {
@@ -421,20 +429,35 @@ a.top:hover {
   }
   .about-hero .links {
     display: flex;
+    justify-content: center;
+    margin-bottom: 40px !important;
   }
   .about-hero .links .primary-link,
   .about-hero .links .secondary-link {
     margin: 0 10px 25px 10px;
     padding: 10px 20px; 
   }
-  .skills {
-    width: 100vw;
-  }
   .skills ul {
-    list-style-type: disc;
+    list-style-type: none;
   }
   .skills ul li{
-    display: block;
+    display: block !important;
+    border: none !important;
+    padding-left: 0 !important;
+  }
+  .skills h3 {
+    font-size: 28px;
+  }
+  .skills hr:first-of-type {
+    margin-top: 100px !important;
+  }
+  .certificate img {
+    width: 230px;
+    margin-bottom: 40px;
+  }
+  .coming-soon img { /* REMOVE THIS CONTENT ONCE I GET CERTIFIFCATE :-) */
+    width: 230px;
+    height: 138px;
   }
   /* MOBILE - WORK PAGE */
   .work h1 {
@@ -462,4 +485,3 @@ a.top:hover {
     margin-bottom: 35px !important;
   }
 }
-/* TABLET - MEDIA QUERIES */
