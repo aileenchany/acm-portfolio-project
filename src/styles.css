@@ -268,11 +268,6 @@ a.top:hover {
   box-shadow: var(--box-shadow);
   margin-bottom: 100px;
 }
-.coming-soon img { /* REMOVE THIS CONTENT ONCE I GET CERTIFIFCATE :-) */
-  border: 12px solid var(--primary-light-color);
-  width: 330px;
-  height: 238px;
-}
 
 /* WORK */
 
@@ -331,20 +326,6 @@ a.top:hover {
 .contact-container .footer h1 {
   font-family: 'Tourney', cursive;
 }
-/* optional leaves css
-.contact-container .palm-leaves-1,
-.contact-container .palm-leaves-2 {
-  position: absolute;
-  height: 75%;
-  opacity: 0.7;
-}
-.contact-container .palm-leaves-1 {
-  left: 0;
-}
-.contact-container .palm-leaves-2 {
-  right: 0;
-}
-*/
 .contact-container .footer a {
   color: var(--primary-dark-color);
   text-decoration: none;
@@ -455,10 +436,7 @@ a.top:hover {
     width: 230px;
     margin-bottom: 40px;
   }
-  .coming-soon img { /* REMOVE THIS CONTENT ONCE I GET CERTIFIFCATE :-) */
-    width: 230px;
-    height: 138px;
-  }
+
   /* MOBILE - WORK PAGE */
   .work h1 {
     padding-top: 0;
