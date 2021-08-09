@@ -27,6 +27,7 @@ nav {
   padding-top: 10px;
   height: 60px;
   position: sticky;
+  justify-content: space-between;
 }
 nav a {
   color: var(--primary-light-color);
@@ -355,3 +356,110 @@ a.top:hover {
   color: var(--accent-color);
   text-decoration: none;
 }
+
+/* MOBILE - MEDIA QUERIES */
+@media only screen and (max-width: 768px) {
+  /* MOBILE - HOMEPAGE */
+  nav p.logo  {
+    display: none;
+  }
+  nav ul {
+    margin: 0 auto;
+  }
+  nav li {
+    margin: 0px 5px;
+    font-size: 16px;
+  }
+  .hero {
+    height: 650px;
+    padding-top: 40px;
+  }
+  .hero h1 {
+    font-size: 120px;
+  }
+  .hero h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  .hero .links {
+    display: flex;
+    justify-content: center;
+  }
+  .links a {
+    margin: 0 10px;
+    padding: 10px 20px; 
+  }
+  .shape-divider {
+    display: none;
+  }
+  .footer {
+    box-sizing: border-box;
+    padding-top: 0;
+  }
+  .foot-note {
+    font-size: 11px;
+  }
+  /* MOBILE - ABOUT PAGE */
+  .about-hero {
+    padding-top: 15px;
+  }
+  .about-hero h1,
+  .about-hero h2,
+  .about-hero p {
+    text-align: center;
+  }
+  .about-hero h1 {
+    font-size: 36px;
+  }
+  .about-hero p {
+    padding: 0 10px;
+    line-height: 1.45em;
+  }
+  .about-hero .my-photo,
+  .about-hero .contact-link {
+    display: none;
+  }
+  .about-hero .links {
+    display: flex;
+  }
+  .about-hero .links .primary-link,
+  .about-hero .links .secondary-link {
+    margin: 0 10px 25px 10px;
+    padding: 10px 20px; 
+  }
+  .skills {
+    width: 100vw;
+  }
+  .skills ul {
+    list-style-type: disc;
+  }
+  .skills ul li{
+    display: block;
+  }
+  /* MOBILE - WORK PAGE */
+  .work h1 {
+    padding-top: 0;
+  }
+  .work .project-content {
+    height: 100%;
+  }
+  .work .project-content .links {
+    margin-bottom: 10px;
+  }
+  /* MOBILE - CONTACT PAGE */
+  .contact-container h1 {
+    font-size: 36px;
+    padding: 0 10px !important;
+    margin: 35px auto !important;
+  }
+  .contact-container .footer h3:last-of-type {
+    margin-top: 35px !important;
+  }
+  .contact-container .footer p:last-of-type {
+    font-size: 14px;
+  }
+  .contact-container .footer ul {
+    margin-bottom: 35px !important;
+  }
+}
+/* TABLET - MEDIA QUERIES */
