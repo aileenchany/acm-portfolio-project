@@ -1,136 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Take a look at ACM's recent work: React Weather App, React Dictionary, and Porto Caribe Website.">
-  <title>ACM - Front End Developer Portfolio | Work Page</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/src/styles.css" />
-  <script src="https://kit.fontawesome.com/5b97558d7e.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <div class="container">
-    <nav class="d-flex justify-content-between"  id="top">
-      <p class="logo">
-        <a href="/" title="Back to Homepage">ACM</a>
-      </p>
-      <ul>
-        <li>
-          <a href="/" title="Homepage">Home</a>
-        </li>
-        <li>
-          <a href="/about.html" title="About Me">About</a>
-        </li>
-        <li class="hidden">
-          <a href="/about.html#qualifications" title="My Qualifications">Skills</a>
-        </li>
-        <li class="active">
-          <a href="/work.html" title="My Work">Work</a>
-        </li>
-        <li>
-          <a href="/contact.html" title="Contact Me">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <div class="container-fluid text-end" id="top">
-    <div class="work">
-      <div class="row mt-5 mb-4 justify-content-center">
-        <h1 class="text-center pb-4">Take a look at my current projects!</h1>
-      </div>
-      <div class="row mt-3 mb-3 justify-content-center"> <!-- React Weather App Project Content -->
-        <div class="col-lg-4 d-none d-sm-block m-3 rounded project project-1">
-          <!-- Project image -->
-        </div>
-        <div class="col-lg-4 m-3 p-5 rounded bg-color project-content">
-          <h2 class="mb-4 text-start">React Weather App</h2>
-          <p class="text-start">
-            Weather forecast application built with <strong>React JS, HTML and CSS</strong> with the use of Open Weather API. By applying the React Hook, useState, the user is able to switch between °F & °C temperatures. Lastly, by using Geolocation, we allow the user to see the weather conditions in their current location. 
-          </p>
-          <div class="links mt-5">
-            <a href="https://eager-nobel-336695.netlify.app/" target="_blank" class="secondary-link">Launch App</a>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-3 mb-3 justify-content-center"> <!-- React Dictionary Project Content -->
-        <div class="col-lg-4 m-3 p-5 rounded bg-color project-content">
-          <h2 class="mb-4 text-start">React Dictionary</h2>
-          <p class="text-start">
-            Dictionary application built with <strong>React JS, HTML and CSS</strong>. Through implementation of both, Dictionary & Pexels REST API'S, the user can search for a word's definition, synonyms & related images simultaneously. Finally, with React Hook "useState", the user can switch between "puppy" & "kitty" themes.
-          </p>
-          <div class="links mt-5">
-            <a href="https://heuristic-liskov-6e075b.netlify.app/" target="_blank" class="secondary-link">Launch App</a>
-          </div>
-        </div>
-        <div class="col-lg-4 d-none d-sm-block m-3 rounded project project-2">
-          <!-- Project image -->
-        </div>
-      </div>
-      <div class="row mt-3 mb-3 justify-content-center"> <!-- Porto Caribe Project Content -->
-        <div class="col-lg-4 d-none d-sm-block m-3 rounded project project-3">
-          <!-- Project image -->
-        </div>
-        <div class="col-lg-4 m-3 p-5 rounded bg-color project-content">
-          <h2 class="mb-4 text-start">Porto Caribe</h2>
-          <p class="text-start">
-            Porto Caribe is a single page travel blog that higlights new and exciting spots in the Puerto Rican West Coast. Known for its beautful sunsets and beaches, the West Coast offers locals, travelers, and visitors alike an abundance of activities from places to stay, discover and feast to your heart's content! Built with <strong>HTML5, CSS3 & Vanilla JS</strong>. 
-          </p>
-          <div class="links mt-5">
-            <a href="https://wonderful-lovelace-54f247.netlify.app/" target="_blank" class="secondary-link">Launch App</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="shape-divider">  <!-- Waves shape divider - See CSS for info -->
-      <div class="custom-shape-divider-top-1628184011">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-        </svg>
-      </div>
-    </div>
-    <div class="row footer text-center justify-content-center align-items-center">
-      <div class="col-md-12 mt-5 mb-4 contact" id="contact">
-        <h3 class="mb-2">Contact me!</h3>
-        <a href="mailto:aileenchany@gmail.com">aileenchany@gmail.com</a>
-        <h3 class="mt-5 mb-2">Let's connect!</h3>
-        <p>Follow me on social media.</p>
-        <ul class="social-media-links mt-4 mb-0 p-0">
-          <li class="d-inline-block ps-0 pe-4">
-            <a href="https://www.instagram.com/porto_caribe/" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Take a look at ACM's recent work: React Weather App, React Dictionary, and Porto Caribe Website."
+    />
+    <title>ACM - Front End Developer Portfolio | Work Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/5b97558d7e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between" id="top">
+        <p class="logo">
+          <a href="/" title="Back to Homepage">ACM</a>
+        </p>
+        <ul>
+          <li>
+            <a class="fw-bold" href="/" title="Homepage">Home</a>
           </li>
-          <li class="d-inline-block ps-4 pe-4">
-            <a href="https://github.com/aileenchany" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
+          <li>
+            <a class="fw-bold" href="/about.html" title="About Me">About</a>
           </li>
-          <li class="d-inline-block ps-4 pe-0">
-            <a href="https://www.linkedin.com/in/aileen-chanmiranda/" target="_blank">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
+          <li class="hidden">
+            <a
+              class="fw-bold"
+              href="/about.html#qualifications"
+              title="My Qualifications"
+              >Skills</a
+            >
+          </li>
+          <li class="active">
+            <a class="fw-bold" href="/work.html" title="My Work">Work</a>
+          </li>
+          <li>
+            <a class="fw-bold" href="/contact.html" title="Contact Me"
+              >Contact</a
+            >
           </li>
         </ul>
-      </div> <!-- Contact "me" content ends -->
-      <div class="foot-note">
-        <a href="https://www.linkedin.com/in/aileen-chanmiranda/" target="_blank" class="fw-bold">ACM</a> 
-        2021 | 
-        <a href="https://github.com/aileenchany/acm-portfolio-project" target="_blank" class="fw-bold">GitHub</a> 
-        Open-Sourced | Hosted on 
-        <a href="https://affectionate-benz-03cce0.netlify.app/" target="_blank" class="fw-bold">Netlify</a>
-        <br/>
-        <br/>
-        <a href="#top" class="top d-none d-sm-block fw-bold">Back to Top</a>
-        <br/>
-        <br/>
-      </div> <!-- Foot-note content ends -->
-    </div> <!-- Footer content ends -->
-  </div> <!-- Work Container content ends-->
-</body>
+      </nav>
+    </div>
+    <div class="container-fluid text-end" id="top">
+      <div class="work">
+        <div class="row mt-5 mb-4 justify-content-center">
+          <h1 class="text-center pb-4">Take a look at my current work!</h1>
+        </div>
+        <div class="row mt-3 mb-3 justify-content-center">
+          <!-- Kompass OSP Content -->
+          <div class="col-lg-4 m-3 p-5 rounded bg-color project-content">
+            <h2 class="mb-4 text-start">Kompass</h2>
+            <p class="text-start">
+              Kompass is an easy to integrate, open-source monitoring tool for
+              your Kubernetes cluster. Kompass combines an interactive dashboard
+              of your cluster's structure, a suite of essential tools to monitor
+              time-series data and alerts, and Grafana based dashboards to help
+              users analyze those metrics in real time. Built with:
+              <strong
+                >React, Redux, TypeScript, Node, Express, Docker, Kubernetes,
+                Prometheus, Grafana.</strong
+              >
+            </p>
+            <div class="links mt-5">
+              <a
+                href="https://kompassmetrics.io/"
+                target="_blank"
+                class="secondary-link"
+                >Website</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 d-none d-sm-block m-3 rounded project project-6">
+            <!-- Project image -->
+          </div>
+        </div>
+        <div class="row mt-3 mb-3 justify-content-center">
+          <!-- Wunder App Project Content -->
+          <div class="col-lg-4 d-none d-sm-block m-3 rounded project project-5">
+            <!-- Project image -->
+          </div>
+          <div class="col-lg-4 m-3 p-5 rounded bg-color project-content">
+            <h2 class="mb-4 text-start">Wunder</h2>
+            <p class="text-start">
+              Wonderful Wunderpus is a web-based platform desgined for anyone
+              who is looking for a job and needs a centralized place for
+              tracking their job applications. Wonderful Wunderpus allows the
+              user to create/log in to their account, view job postings fetched
+              from Remotive Jobs Api, create applications, assign priorities to
+              applications, update application status as they move through the
+              pipeline, and delete applications as desired. Built with
+              <strong>React, Redux, MUI, Node, Express, MongoDB.</strong>
+            </p>
+            <div class="links mt-5">
+              <a
+                href="https://github.com/Team-Wunderpuss-2-0/Wunderpus"
+                target="_blank"
+                class="secondary-link"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3 mb-3 justify-content-center">
+          <!-- Miyaki Project Content -->
+          <div class="col-lg-4 m-3 p-5 rounded bg-color project-content">
+            <h2 class="mb-4 text-start">Miyaki</h2>
+            <p class="text-start">
+              A chef knives Ecommerce store. Miyaki is an iteration project
+              built under 3 days with a team of 4 engineers. One of the
+              challenges I faced was working with an existing code base that
+              needed improvements in UI, a working shopping cart and user login
+              functionality. Built with
+              <strong>React, MUI, Node, Express, PostgreSQL.</strong>
+            </p>
+            <div class="links mt-5">
+              <a
+                href="https://github.com/miyaki-knives/miyaki"
+                target="_blank"
+                class="secondary-link"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 d-none d-sm-block m-3 rounded project project-4">
+            <!-- Project image -->
+          </div>
+        </div>
+        <div class="row mt-3 mb-3 justify-content-center">
+          <!-- React Weather App Project Content -->
+          <div class="col-lg-4 d-none d-sm-block m-3 rounded project project-1">
+            <!-- Project image -->
+          </div>
+          <div class="col-lg-4 m-3 p-5 rounded bg-color project-content">
+            <h2 class="mb-4 text-start">React Weather App</h2>
+            <p class="text-start">
+              Weather forecast application built with
+              <strong>React JS, HTML and CSS</strong> with the use of Open
+              Weather API. By applying the React Hook, useState, the user is
+              able to switch between °F & °C temperatures. Lastly, by using
+              Geolocation, we allow the user to see the weather conditions in
+              their current location.
+            </p>
+            <div class="links mt-5">
+              <a
+                href="https://vigorous-banach-36c0b8.netlify.app/"
+                target="_blank"
+                class="secondary-link"
+                >Launch App</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3 mb-3 justify-content-center">
+          <!-- React Dictionary Project Content -->
+          <div class="col-lg-4 m-3 p-5 rounded bg-color project-content">
+            <h2 class="mb-4 text-start">React Dictionary</h2>
+            <p class="text-start">
+              Dictionary application built with
+              <strong>React JS, HTML and CSS</strong>. Through implementation of
+              both, Dictionary & Pexels REST API'S, the user can search for a
+              word's definition, synonyms & related images simultaneously.
+              Finally, with React Hook "useState", the user can switch between
+              "puppy" & "kitty" themes.
+            </p>
+            <div class="links mt-5">
+              <a
+                href="https://heuristic-liskov-6e075b.netlify.app/"
+                target="_blank"
+                class="secondary-link"
+                >Launch App</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 d-none d-sm-block m-3 rounded project project-2">
+            <!-- Project image -->
+          </div>
+        </div>
+        <div class="row mt-3 mb-3 justify-content-center">
+          <!-- Porto Caribe Project Content -->
+          <div class="col-lg-4 d-none d-sm-block m-3 rounded project project-3">
+            <!-- Project image -->
+          </div>
+          <div class="col-lg-4 m-3 p-5 rounded bg-color project-content">
+            <h2 class="mb-4 text-start">Porto Caribe</h2>
+            <p class="text-start">
+              Porto Caribe is a single page travel blog that higlights new and
+              exciting spots in the Puerto Rican West Coast. Known for its
+              beautful sunsets and beaches, the West Coast offers locals,
+              travelers, and visitors alike an abundance of activities from
+              places to stay, discover and feast to your heart's content! Built
+              with <strong>HTML5, CSS3 & Vanilla JS</strong>.
+            </p>
+            <div class="links mt-5">
+              <a
+                href="https://wonderful-lovelace-54f247.netlify.app/"
+                target="_blank"
+                class="secondary-link"
+                >Launch App</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shape-divider">
+        <!-- Waves shape divider - See CSS for info -->
+        <div class="custom-shape-divider-top-1628184011">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+              opacity=".25"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+              opacity=".5"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <div
+        class="row footer text-center justify-content-center align-items-center"
+      >
+        <div class="col-md-12 mt-5 mb-4 contact" id="contact">
+          <h3 class="mb-2">Contact me!</h3>
+          <a href="mailto:aileenchany@gmail.com">aileenchany@gmail.com</a>
+          <h3 class="mt-5 mb-2">Let's connect!</h3>
+          <p>Follow me on social media.</p>
+          <ul class="social-media-links mt-4 mb-0 p-0">
+            <li class="d-inline-block ps-0 pe-4">
+              <a href="https://www.instagram.com/porto_caribe/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="d-inline-block ps-4 pe-4">
+              <a href="https://github.com/aileenchany" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li class="d-inline-block ps-4 pe-0">
+              <a
+                href="https://www.linkedin.com/in/aileen-chanmiranda/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Contact "me" content ends -->
+        <div class="foot-note">
+          <a
+            href="https://www.linkedin.com/in/aileen-chanmiranda/"
+            target="_blank"
+            class="fw-bold"
+            >ACM</a
+          >
+          2022 |
+          <a
+            href="https://github.com/aileenchany/acm-portfolio-project"
+            target="_blank"
+            class="fw-bold"
+            >GitHub</a
+          >
+          Open-Sourced | Hosted on
+          <a
+            href="https://affectionate-benz-03cce0.netlify.app/"
+            target="_blank"
+            class="fw-bold"
+            >Netlify</a
+          >
+          <br />
+          <br />
+          <a href="#top" class="top d-none d-sm-block fw-bold">Back to Top</a>
+          <br />
+          <br />
+        </div>
+        <!-- Foot-note content ends -->
+      </div>
+      <!-- Footer content ends -->
+    </div>
+    <!-- Work Container content ends-->
+  </body>
 </html>
